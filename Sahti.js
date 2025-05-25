@@ -268,3 +268,9 @@ function GeneratePlaceHolders() {
         })(i);
     }
 }
+
+const bot_assistant = document.querySelector('.bot-assistant');
+
+bot_assistant.onlick = function() {
+    chatCon.scrollTop = chatCon.scrollHeight;
+}
