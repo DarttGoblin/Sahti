@@ -47,3 +47,232 @@ body {
         width: 80%;
     }
 }
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.rotateAnimation {animation: rotate 2s linear infinite;}
+.waitingIconStyle {
+    font-size: 30px;
+    color: rgb(200, 200, 200, 0.6);
+}
+#ruleWritingIcon {color: rgb(222, 21, 21); font-size: 25px;}
+#troubleshootingIcon {color: rgb(255, 255, 255); font-size: 25px;}
+#securityIcon {color: rgba(248, 181, 47, 0.77); font-size: 25px;}
+.parentDivStyle {
+    height: 60%;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+.logoImgStyle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: -150px;
+}
+.buttonsContStyle {
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+    height: 100%;
+    width: 100%;
+}
+.childButtonStyle {
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
+    color: rgba(200, 200, 200, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    text-align: left;
+    transition: background 0.1s;
+}
+.childButtonStyle:hover {background-color: rgba(200, 200, 200, 0.3);}
+.references {
+    color: rgb(200, 200, 200);
+    font-size: 15px;
+    user-select: text;
+    display: flex;
+    margin-bottom: 10px;
+}
+.aiResp {
+    color: black;
+    background-color: rgb(200, 200, 200, 0.6);
+}
+.prompts {
+    color: white;
+    background-color: rgb(221, 74, 221, 0.2);
+}
+.chatSpans {
+    font-size: 23px;
+    width: 97%;
+    min-height: 25px;
+    user-select: text;
+    display: flex;
+    margin-bottom: 30px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+#chatCon {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 550px;
+    width: 60%;
+    margin: 0px 0px 30px 0px;
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chatCon::-webkit-scrollbar {width: 10px; margin-left: 10px;}
+#chatCon::-webkit-scrollbar-track {visibility: hidden;}
+#chatCon::-webkit-scrollbar-thumb {background-color: rgba(200, 200, 200, 0.6);}
+#searchCon {
+    width: fit-content;
+    display: flex;
+    width: 60%;
+}
+#helpArrowIcon {
+    font-size: 23px;
+    color: white;
+    background-color: none;
+    background: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px 0px 0px -55px;
+}
+#helpArrowIcon:hover {background-color: rgba(200, 200, 200, 0.3);}
+#searchEng::placeholder {color: rgba(200, 200, 200, 0.6);}
+#searchEng {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(204, 202, 202, 0.3);
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    padding: 0px 70px 0px 30px;
+    border: none;
+    outline: none;
+}
+#bluredDiv {
+    position: absolute;
+    height: 105%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: -9999;
+}
+body {
+    position: absolute;
+    height: fit-content;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+    background-image: url("../../InterfaceMedia/GIFs/earthBG.gif");
+    background-size: cover;
+    background-position: 0px -80px;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+@media only screen and (max-width: 1500px) {
+    .childButtonStyle {
+        height: 80%;
+        width: 30%;
+        font-size: 18px;
+        margin: 0px 10px 0px 10px;
+        padding: 0px 10px 0px 10px;
+    }
+    .buttonsContStyle {margin-top: 0px;}
+    #chatCon {
+        height: 400px;
+        margin: 0px 0px 0px 0px;
+        padding: 50px 20px 0px 20px;
+    }
+    
+}
+@media only screen and (max-width: 1000px) {
+    .childButtonStyle {
+        height: 100%;
+        width: 80%;
+        font-size: 17px;
+        margin: 10px 0px 10px 0px;
+        padding: 10px 20px 10px 20px;
+    }
+    .buttonsContStyle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    #chatCon {margin-top: 30px; height: 550px;}
+}
+@media only screen and (max-width: 700px) {
+    .childButtonStyle {
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+        margin: 5px 0px 5px 0px;
+        padding: 5px 10px 5px 10px;
+    }
+    #ruleWritingIcon {font-size: 18px;}
+    #troubleshootingIcon {font-size: 18px;}
+    #securityIcon {font-size: 18px;}
+    #searchEng {
+        height: 50px;
+        width: 130%;
+        font-size: 18px;
+        border-radius: 20px;
+        padding: 0px 50px 0px 20px;
+        position: relative;
+        top: -50px;
+    }
+    #helpArrowIcon {
+        font-size: 18px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin: 0px 0px 0px -40px;
+        position: relative;
+        top: -40px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .logoImgStyle {
+        width: 50px;
+        height: 50px;
+        margin-top: -100px;
+    }
+    #chatCon {
+        margin-top: -100px;
+        width: 90%;
+    }
+    #searchCon {
+        width: 80%;
+        position: relative;
+        right: 10px;
+    }
+    .chatSpans {
+        font-size: 18px;
+        width: 88%;
+        min-height: 20px;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+    }
+    .waitingIconStyle {font-size: 20px;}
+}

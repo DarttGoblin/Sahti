@@ -29,6 +29,7 @@
             <a class="nav-links">LEARNHUB</a>
             <a class="nav-links">ABOUT</a>
         </div>
+        <img class="nav-logo" src="Sahti.Media/Images/bot.png">
 
         <div class="settings">
             <div class="settings-line"></div>
@@ -91,22 +92,13 @@
         </div>
     </section>
 
-    <section class="therabot-section">
-        <div class="therabot-textcontent">
-            <span class="therabot-title">Sahti</span>
-            <span class="therabot-title-child">Your Digestive Health Companion</span>
-            <span class="therabot-sub-title">Personalized care for your digestive system, anytime, anywhere.</span>
-        </div>
-        <div class="chat-bot-container">
-            <img class="chat-bot-image" src="TheraBot.Media/Images/chat-bot-image.png">
-            <button class="start-consulting">Start Consulting</button>
-            <div class="messages-container"></div>
-            <div class="bot-buttons-container">
-                <button class="bot-buttons no">No</button>
-                <button class="bot-buttons yes">Yes</button>
-            </div>
-        </div>
-    </section>
+    <div id="helpBodyCon">
+        <div id="chatCon"></div>
+        <div id="searchCon">
+            <input id="searchEng" type="text" max="200" autocomplete="off">
+            <button id="helpArrowIcon"><i class="fa fa-arrow-up"></i></button>
+        </div> 
+    </div>
 
     <section class="dashboard-section">
         <span class="history-title">Dashboard</span>
@@ -140,7 +132,7 @@
                 </div>
                 <div class="about-card side-cards-second about-video-container">
                     <video autoplay muted loop class="about-video">
-                        <source src="TheraBot.Media/Videos/about-video1.mp4">
+                        <source src="Sahti.Media/Videos/about-video1.mp4">
                     </video>
                 </div>
             </div>
@@ -162,8 +154,8 @@
                         <div class="background bg-fourth"></div>
                         <span class="about-special-text generated">50,000+</span><br>expert diagnoses generated<br>using Prolog-based<br>reasoning.<br>
                         <a class="about-links">View success stories.</a>
-                        <img class="center-div-image1" src="TheraBot.Media/Images/about-diagnosis.png">
-                        <img class="center-div-image2" src="TheraBot.Media/Images/about-loop.jpg">
+                        <img class="center-div-image1" src="Sahti.Media/Images/about-diagnosis.png">
+                        <img class="center-div-image2" src="Sahti.Media/Images/about-loop.jpg">
                     </div>
                 </div>    
                 <div class="center-sub-group">
@@ -182,7 +174,7 @@
             <div class="side-cards-group">
                 <div class="about-card side-cards-third about-video-container">
                     <video autoplay muted loop class="about-video">
-                        <source src="TheraBot.Media/Videos/about-video2.mp4">
+                        <source src="Sahti.Media/Videos/about-video2.mp4">
                     </video>
                 </div>
                 <div class="about-card side-cards-fourth">
@@ -194,19 +186,19 @@
         </div>        
 
         <div class="long-image-container">
-            <img class="long-about-image" src="TheraBot.Media/Images/about-long-image.jpg">
+            <img class="long-about-image" src="Sahti.Media/Images/about-long-image.jpg">
             <span class="long-image-span">Empowering care for digestive health in leading hospitals worldwide.</span>
         </div>
     </section>
 
     <noscript>This website needs javascript to properly work, please enable javascript in your browser!</noscript>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="TheraBot.Scripts/Nav.js"></script>
-    <script src="TheraBot.Scripts/Footer.js"></script>
-    <script src="TheraBot.Scripts/Background.js"></script>
-    <script src="TheraBot.Scripts/Home.js"></script>
-    <script src="TheraBot.Scripts/Dashboard.js"></script>
-    <script src="TheraBot.Scripts/About.js"></script>
-    <script src="TheraBot.Scripts/Chat.js"></script>
+    <script src="Sahti.Scripts/Nav.js"></script>
+    <script src="Sahti.Scripts/Footer.js"></script>
+    <script src="Sahti.Scripts/Background.js"></script>
+    <script src="Sahti.Scripts/Home.js"></script>
+    <script src="Sahti.Scripts/Dashboard.js"></script>
+    <script src="Sahti.Scripts/About.js"></script>
+    <script src="Sahti.Scripts/Chat.js"></script>
     <script src="Sahti.js"></script>
 </body>
