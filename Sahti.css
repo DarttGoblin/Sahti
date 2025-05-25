@@ -1,0 +1,49 @@
+:root {
+    --primary-color: rgb(98, 64, 232);
+    --primary-hover-color: rgb(137, 109, 249);
+    --primary-dark-hover-color: rgb(53, 27, 159);
+}
+
+html {scroll-behavior: smooth;}
+
+body {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Effra-Regular';
+    src: url('TheraBot.Media/Effra\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.blured {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+
+@media only screen and (max-width: 1500px) {
+    .home-cards {
+        justify-content: center;
+        width: 80%;
+    }
+}

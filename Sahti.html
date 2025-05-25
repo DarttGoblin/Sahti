@@ -1,0 +1,212 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Sahti.css">
+    <link rel="stylesheet" href="Sahti.Styles/Nav.css">
+    <link rel="stylesheet" href="Sahti.Styles/Footer.css">
+    <link rel="stylesheet" href="Sahti.Styles/Home.css">
+    <link rel="stylesheet" href="Sahti.Styles/Sahti.css">
+    <link rel="stylesheet" href="Sahti.Styles/Dashboard.css">
+    <link rel="stylesheet" href="Sahti.Styles/History.css">
+    <link rel="stylesheet" href="Sahti.Styles/About.css">
+    <link rel="shortcut icon" href="Sahti.Media/Images/logo-no-bg.png">
+    <title>Sahti</title>
+</head>
+<body>
+    <video autoplay muted class="bg-video">
+        <source class="bg_video_source" type="video/mp4">
+        Oops! Sounds like you're dying...
+    </video>
+
+    <div class="blured"></div>
+
+    <nav>
+        <img class="nav-logo" src="Sahti.Media/Images/logo-no-bg.png">
+        <div class="nav-links-container">
+            <a class="nav-links">HOME</a>
+            <a class="nav-links">LEARNHUB</a>
+            <a class="nav-links">ABOUT</a>
+        </div>
+
+        <div class="settings">
+            <div class="settings-line"></div>
+            <div class="settings-line"></div>
+            <div class="settings-line"></div>
+        </div>
+
+        <div class="responsive-nav">
+            <div class="responsive-nav-logo-container">
+                <img class="responsive-nav-logo" src="Sahti.Media/Images/logo-no-bg.png">
+                <i class="closing-icon fa fa-times"></i>
+            </div>
+
+            <div class="responsive-nav-links-container">
+                <div class="responsive-nav-link-row">
+                    <span class="responsive-nav-link">HOME</span>
+                    <span class="responsive-nav-link">SAHTI</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="home-section">
+        <div class="title-button-container">
+            <span class="home-title">Healthier should<br>always be within reach</span>
+            <span class="home-sub-title">An AI-driven assistant for personalized healthcare guidance</span>
+            <div class="home-section-buttons-container">
+                <button class="get-care">Get care now</button>
+                <button class="read-report">Read Report</button>
+            </div>
+        </div>
+        <div class="home-cards">
+            <div class="card">
+                <span class="card-span-title">INDIVIDUALS</span>
+                <span class="card-span-para">Health insights at your fingertips</span>
+                <div class="card-button-container">
+                    <i class="arrow-icon fas fa-arrow-right"></i>
+                    <span class="card-button-span">Start your assessment</span>
+                </div>
+                <img class="card-image" src="Sahti.Media/Images/health_assessment.png">
+            </div>
+            <div class="card">
+                <span class="card-span-title">ORGANIZATIONS</span>
+                <span class="card-span-para">Empowering better healthcare decisions</span>
+                <div class="card-button-container">
+                    <i class="arrow-icon fas fa-arrow-right"></i>
+                    <span class="card-button-span">Learn more about Sahti</span>
+                </div>
+                <img class="card-image" src="Sahti.Media/Images/medical_group.png">
+            </div>
+            <div class="card">
+                <span class="card-span-title">CLINICIANS</span>
+                <span class="card-span-para">Tools to enhance patient care</span>
+                <div class="card-button-container">
+                    <i class="arrow-icon fas fa-arrow-right"></i>
+                    <span class="card-button-span">Explore incoming systems</span>
+                </div>
+                <img class="card-image" src="Sahti.Media/Images/medical-bot.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="therabot-section">
+        <div class="therabot-textcontent">
+            <span class="therabot-title">Sahti</span>
+            <span class="therabot-title-child">Your Digestive Health Companion</span>
+            <span class="therabot-sub-title">Personalized care for your digestive system, anytime, anywhere.</span>
+        </div>
+        <div class="chat-bot-container">
+            <img class="chat-bot-image" src="TheraBot.Media/Images/chat-bot-image.png">
+            <button class="start-consulting">Start Consulting</button>
+            <div class="messages-container"></div>
+            <div class="bot-buttons-container">
+                <button class="bot-buttons no">No</button>
+                <button class="bot-buttons yes">Yes</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard-section">
+        <span class="history-title">Dashboard</span>
+        <div class="charts-container">
+            <div class="pie-chart-container">
+                <canvas class="pie-chart"></canvas>
+            </div>
+            <div class="bar-chart-container">
+                <canvas class="bar-chart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section class="history-section">
+        <span class="history-title">History</span>
+        <div class="history-container">
+            <span class="no-history-data">No data is available now!</span>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <span class="about-title">A high-quality care experience<br>—anywhere, anytime</span>
+        <span class="about-sub-title">It started with a simple yet revolutionary idea. That everyone should have access to the<br>best healthcare anywhere in the world on their terms. That includes you.</span>
+
+        <div class="about-card-container">
+            <div class="side-cards-group">
+                <div class="about-card side-cards-first">
+                    <div class="background bg-first"></div>
+                    <span class="about-special-text leading">#1</span><br>Leading virtual care platform for digestive health.<br>
+                    <a class="about-links">See testimonials.</a>
+                </div>
+                <div class="about-card side-cards-second about-video-container">
+                    <video autoplay muted loop class="about-video">
+                        <source src="TheraBot.Media/Videos/about-video1.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="center-cards-group">
+                <div class="center-sub-group">
+                    <div class="about-card center-first">
+                        <div class="background bg-second"></div>
+                        <span class="about-special-text consultation">500,000+</span><br>consultations helped users identify potential digestive system disorders.<br>
+                        <a class="about-links">View case studies.</a>
+                    </div>
+                    <div class="about-card center-second">
+                        <div class="background bg-third"></div>
+                        <span class="about-special-text diagnosis">+95%</span><br>accuracy in condition diagnosis powered by Prolog.<br>
+                        <a class="about-links">View our methodology.</a>
+                    </div>
+                </div>
+                <div class="center-sub-group">
+                    <div class="about-card center-third">
+                        <div class="background bg-fourth"></div>
+                        <span class="about-special-text generated">50,000+</span><br>expert diagnoses generated<br>using Prolog-based<br>reasoning.<br>
+                        <a class="about-links">View success stories.</a>
+                        <img class="center-div-image1" src="TheraBot.Media/Images/about-diagnosis.png">
+                        <img class="center-div-image2" src="TheraBot.Media/Images/about-loop.jpg">
+                    </div>
+                </div>    
+                <div class="center-sub-group">
+                    <div class="about-card center-fourth">
+                        <div class="background bg-fifth"></div>
+                        You'll find TheraBot <span class="about-special-text transforming">transforming</span> care in leading medical centers worldwide.<br>
+                        <a class="about-links">Discover how we support hospitals.</a>
+                    </div>
+                    <div class="about-card center-fifth">
+                        <div class="background bg-seventh"></div>
+                        <span class="about-special-text improvement">80%</span><br>of users reported improvement in managing digestive conditions.<br>
+                        <a class="about-links">Learn more.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="side-cards-group">
+                <div class="about-card side-cards-third about-video-container">
+                    <video autoplay muted loop class="about-video">
+                        <source src="TheraBot.Media/Videos/about-video2.mp4">
+                    </video>
+                </div>
+                <div class="about-card side-cards-fourth">
+                    <div class="background bg-eighth"></div>
+                    Watch how TheraBot <span class="about-special-text empowers">empowers<br></span> the understanding of digestive health.<br>
+                    <a class="about-links">Use TheraBot.</a>
+                </div>
+            </div>
+        </div>        
+
+        <div class="long-image-container">
+            <img class="long-about-image" src="TheraBot.Media/Images/about-long-image.jpg">
+            <span class="long-image-span">Empowering care for digestive health in leading hospitals worldwide.</span>
+        </div>
+    </section>
+
+    <noscript>This website needs javascript to properly work, please enable javascript in your browser!</noscript>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="TheraBot.Scripts/Nav.js"></script>
+    <script src="TheraBot.Scripts/Footer.js"></script>
+    <script src="TheraBot.Scripts/Background.js"></script>
+    <script src="TheraBot.Scripts/Home.js"></script>
+    <script src="TheraBot.Scripts/Dashboard.js"></script>
+    <script src="TheraBot.Scripts/About.js"></script>
+    <script src="TheraBot.Scripts/Chat.js"></script>
+    <script src="Sahti.js"></script>
+</body>

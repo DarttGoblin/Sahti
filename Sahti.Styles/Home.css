@@ -1,0 +1,214 @@
+.home-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 600px;
+}
+
+.home-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+}
+
+.home-sub-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.home-section-buttons-container {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.get-care, .read-report {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.get-care {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: white;
+}
+
+.read-report {
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+
+.get-care:hover {
+    background-color: var(--primary-hover-color);
+    border: 2px solid var(--primary-hover-color);
+}
+
+.read-report:hover {
+    backdrop-filter: blur(50px);
+}
+
+.home-button:hover {backdrop-filter: blur(30px);}
+
+.home-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 500px;
+    width: 370px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 40px 0px 0px 40px;
+}
+
+.card::-webkit-scrollbar {margin-top: 20px; width: 10px;}
+.card::-webkit-scrollbar-track {visibility: hidden;}
+.card::-webkit-scrollbar-thumb {visibility: hidden;}
+
+.card-span-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card-span-para {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.card-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-icon {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 10px 12px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card-button-span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-hover-color);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card-button-span:hover {border-bottom: 5px solid var(--primary-hover-color);}
+
+.card-image {
+    width: 80%;
+    position: relative;
+    top: 100px;
+    right: -110px;
+}
+
+@media only screen and (max-width: 800px) {
+    .home-title {
+        font-size: 40px;
+    }
+    
+    .home-sub-title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .title-button-container {
+        margin-top: 320px;
+    }
+    .home-title {
+        font-size: 30px;
+    }
+    
+    .home-sub-title {
+        font-size: 15px;
+    }
+
+    .home-section-buttons-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .get-care, .read-report {
+        width: 80%;
+        align-self: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 350px;
+        width: 370px;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 20px 0px 0px 20px;
+    }
+
+    .card-image {
+        width: 80%;
+        position: relative;
+        top: 30px;
+        right: -80px;
+    }
+
+    .card-span-title {
+        font-size: 20px;
+    }
+    
+    .card-span-para {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .arrow-icon {
+        color: white;
+        background-color: var(--primary-color);
+        padding: 6px 7px;
+        font-size: 15px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .card-button-span {
+        font-size: 15px;
+    }
+}

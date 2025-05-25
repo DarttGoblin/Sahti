@@ -1,0 +1,356 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 1330px;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-sub-title {
+    text-align: center;
+    font-family: Effra-Regular;
+    font-size: 25px;
+    color: white;
+}
+
+.about-card-container {
+    margin-top: 100px;
+    display: flex;
+    gap: 10px;
+    user-select: none;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.2);
+    transition: opacity 0.5s;
+}
+
+.side-cards-group, .center-cards-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 430px;
+}
+
+.center-sub-group {
+    display: flex;
+    gap: 10px;
+}
+
+.center-cards-group {
+    width: 900px;
+}
+
+.about-card {
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 25px;
+    padding: 30px;
+    font-family: Effra-Regular;
+    cursor: pointer;
+}
+
+.about-special-text {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.leading {color: rgb(0, 120, 0);}
+
+.improvement {color: rgb(218, 75, 185);}
+
+.consultation {color: rgb(218, 75, 185);}
+
+.diagnosis {color: rgb(0, 0, 0);}
+
+.generated {color: rgb(98, 64, 232);}
+
+.empowers {color: rgb(27, 139, 195);}
+
+.transforming {color: rgb(104, 104, 104);}
+
+
+.center-sub-group {
+    display: flex;
+    width: 100%;
+}
+
+.side-cards-first, .side-cards-fourth {
+    height: 155px;
+}
+
+.side-cards-second, .side-cards-third {
+    height: 465px;
+}
+
+.center-first, .center-fifth {
+    height: 155px;
+    width: 60%;
+}
+
+.center-second, .center-fourth {
+    height: 155px;
+    width: 40%;
+}
+
+.center-third {
+    height: 240px;
+    width: 100%;
+}
+
+.long-image-container {
+    position: relative;
+    width: 1330px;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 100px;
+    border-radius: 50px;
+}
+
+.long-about-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.2s ease;
+}
+
+.long-image-container:hover .long-about-image {
+    transform: scale(1.1);
+}
+
+.long-image-span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+}
+
+.about-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.bg-first {background-color: rgb(0, 120, 0);}
+
+.bg-second {background-color:  rgb(218, 75, 185);}
+
+.bg-third {background-color: rgb(0, 0, 0);}
+
+.bg-fourth {background-color: rgb(98, 64, 232);}
+
+.bg-fifth {background-color: rgb(104, 104, 104);}
+
+.bg-seventh {background-color: rgb(218, 75, 185);}
+
+.bg-eighth {background-color: rgb(27, 139, 195);}
+
+.about-card:hover .background {
+    opacity: 1;
+}
+
+.about-card:hover .about-links {
+    opacity: 1;
+}
+
+.about-video-container {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.about-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+}
+
+.center-div-image1 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0%, -50%);
+    z-index: 5;
+    height: 250px;
+    width: 250px;
+}
+
+.center-div-image2 {
+    position: absolute;
+    top: 65%;
+    right: 40%;
+    transform: translate(0%, -50%);
+    z-index: 5;
+    height: 150px;
+    width: 150px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .about-section {
+        width: 90%;
+    }
+
+    .long-image-container {
+        width: 100%;
+    }
+    
+    .long-about-image {
+        width: 100%;
+    }
+
+    .long-image-span {
+        font-size: 40px;
+    }
+
+    .about-card-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .side-cards-group {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .about-video-container {
+        width: 50%;
+    }
+
+    .center-cards-group {
+        width: 100%;
+    }
+
+    .side-cards-first, .side-cards-fourth {
+        height: 200px;
+    }
+    
+    .side-cards-second, .side-cards-third {
+        height: 200px;
+    }
+    
+    .center-first, .center-fifth {
+        height: 155px;
+        width: 60%;
+    }
+    
+    .center-second, .center-fourth {
+        height: 155px;
+        width: 40%;
+    }
+    
+    .center-third {
+        height: 250px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .side-cards-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center-cards-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center-sub-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-video-container {
+        width: 88%;
+    }
+
+    .about-card {
+        width: 88%;
+    }
+
+    .center-div-image1 {
+        top: 70%;
+        height: 150px;
+        width: 150px;
+    }
+
+    .center-div-image2 {
+        top: 78%;
+        right: 38%;
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .long-image-container {
+        margin-top: 50px;
+        height: 200px;
+    }
+
+    .long-image-span {
+        font-size: 20px;
+    }
+
+    .about-title {
+        font-size: 30px;
+    }
+    
+    .about-sub-title {
+        font-size: 15px;
+    }
+
+    .about-video-container {
+        align-self: center;
+        width: 80%;
+    }
+
+    .about-card {
+        align-self: center;
+        width: 80%;
+    }
+}
